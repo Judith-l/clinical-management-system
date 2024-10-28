@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang = "en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+</head>
+<body>
+    <h1>An Error Occurred</h1>
+    <p th:text="${message}">Default error message goes here.</p>
+    <p>
+        <a href="/" th:href="@{home/}">Go to Home</a>
+    </p>
+</body>
+</html>

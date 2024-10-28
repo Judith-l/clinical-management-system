@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Botsogo</h1>
+        <p>Your health, our priority.</p>
+        <a th:href="@{/login}">Login</a>
+        <a href="/signup">Sign Up</a>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>We provide comprehensive healthcare solutions to ensure the well-being of our patients.</p>
+        </section>
+        <section>
+            <h2>Services</h2>
+            <ul>
+                <li>Patient Management <a th:href="@{/patients}">Patient</a></li>
+                <li>Appointment Scheduling</li>
+                <li>Medical Records Management</li>
+                <li>Billing and Insurance Processing</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>For inquiries, please reach out to us at <a href="mailto:info@clinic.com">info@clinic.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Clinic Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
